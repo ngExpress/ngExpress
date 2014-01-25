@@ -2,7 +2,21 @@ var express = require('express');
 var http = require('http');
 var path = require('path');
 var fs = require('fs');
+var crypto = require('crypto');
 var consolidate = require('consolidate');
+
+var today = new Date();
+var serverId = 'ngExpress';
+if (process.argv.indexOf('-dev') > -1) {
+    serverId = serverId + '.dev';
+}
+serverId = serverId + '.' + ("0" + today.getDate()).slice(-2) + ("0" + (today.getMonth() + 1)).slice(-2) + today.getFullYear();
+serverId = serverId + '.' + ("0" + today.getHours()).slice(-2) + ("0" + today.getMinutes()).slice(-2) + ("0" + today.getSeconds()).slice(-2);
+crypto.randomBytes(16, function(error, buffer) {
+    if (!error) {
+        serverId = serverId + '.' + buffer.toString('base64');
+    }
+});
 
 var app = express();
 
@@ -23,7 +37,7 @@ if (process.argv.indexOf('-dev') > -1) {
 
     app.get('/', function(request, response){
         response.render(path.join(__dirname, '../client/app/index.html'), {
-            title: 'ngExpress [DEV]'
+            serverId: serverId
         });
     });
 
@@ -31,7 +45,7 @@ if (process.argv.indexOf('-dev') > -1) {
 } else {
     app.get('/', function(request, response){
         response.render(path.join(__dirname, '../client/dist/index.html'), {
-            title: 'ngExpress'
+            serverId: serverId
         });
     });
 

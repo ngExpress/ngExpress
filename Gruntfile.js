@@ -38,6 +38,19 @@ module.exports = function(grunt) {
             }
         },
 
+        uglify : {
+            options: {
+                preserveComments: false,
+                compress: false,
+                mangle: false,
+                beautify: {
+                    beautify: false,
+                    ascii_only: true,
+                    quote_keys: true
+                }
+            },
+        },
+
         connect: {
             options: {
                 port: 9000,

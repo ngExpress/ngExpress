@@ -4,16 +4,15 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
-        <title><%= title %></title>
+        <title>ngExpress</title>
     
         <meta name="viewport" content="width=device-width">
 
         <!-- build:css styles/vendor.css -->
         <!-- bower:css -->
-        <link rel="stylesheet" href="bower_components/select2/select2.css" />
         <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="bower_components/ngExpress-bundles-ui/dist/bundle.css" />
         <!-- endbower -->
-        <link rel="stylesheet" href="bower_components/select2/select2-bootstrap.css" />
         <!-- endbuild -->
     
         <!-- build:css({.tmp,client/app}) styles/main.css -->
@@ -38,19 +37,17 @@
 
         <div class="container sign">
             <hr />
-            <span class="text-muted pull-right">ngExpress</span>
+            <span class="text-muted pull-right"><%= serverId %></span>
         </div>
-
-        <script src="bower_components/jquery/jquery.js"></script>
-        <script src="bower_components/select2/select2.js"></script>
 
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
+        <script src="bower_components/jquery/jquery.js"></script>
         <script src="bower_components/angular/angular.js"></script>
         <script src="bower_components/angular-route/angular-route.js"></script>
         <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="bower_components/ngExpress-bundles-ui/dist/bundle.js"></script>
         <!-- endbower -->
-        <script src="shared_components/ui-bundle/dist/ui-bundle.js"></script>
         <!-- endbuild -->
     
         <!-- build:js({.tmp,client/app}) scripts/scripts.js -->

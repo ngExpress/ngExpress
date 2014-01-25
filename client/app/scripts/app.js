@@ -2,7 +2,7 @@
 
 angular.module('ngApp', [
         'ngRoute',
-        'ui.bundle'
+        'ngExpress.bundles.ui'
     ])
     .config([
         '$routeProvider',
