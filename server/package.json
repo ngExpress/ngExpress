@@ -2,6 +2,7 @@
   "name": "momentum-bare",
   "version": "0.0.1",
   "dependencies": {
-    "express": "~3.4.8"
+    "express": "~3.4.8",
+    "connect-livereload": "~0.3.2"
   }
 }

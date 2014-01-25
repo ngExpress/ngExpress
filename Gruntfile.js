@@ -207,6 +207,12 @@ module.exports = function(grunt) {
             }
         },
 
+        open: {
+            server: {
+                url: 'http://localhost:9000/'
+            }
+        },
+
         concurrent: {
             server: [
                 'copy:styles'
@@ -227,8 +233,15 @@ module.exports = function(grunt) {
     });
 
     grunt.registerTask('server', function() {
-        grunt.log.warn('The `server` task has been deprecated. Use `grunt serve` to start a server.');
-        grunt.task.run(['serve']);
+        var child = grunt.util.spawn({
+            cmd: process.argv[0],
+            args: ['server/app.js', '-dev']
+        });
+
+        child.stdout.pipe(process.stdout);
+        child.stderr.pipe(process.stderr);
+
+        grunt.task.run(['bower-install', 'open', 'watch']);
     });
 
     grunt.registerTask('build', [
