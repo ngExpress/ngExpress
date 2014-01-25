@@ -7,6 +7,8 @@ ngExpress
 
 > Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
 
+**Git version:**
+
 ```
 git --version
 ```
@@ -14,6 +16,8 @@ git --version
 ### [Node.js](http://nodejs.org/)
 
 > Node.js is a platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices.
+
+**Node.js version:**
 
 ```
 node --version
@@ -23,8 +27,16 @@ node --version
 
 > Grunt is a JavaScript task runner that help you automate repetitive tasks like minification, compilation, unit testing, linting, etc. After you've configured it, a task runner can do most of that mundane work for you—and your team—with basically zero effort.
 
+**Install grunt:**
+
 ```
 npm install grunt-cli -g
+```
+
+**Grunt version:**
+
+```
+grunt --version
 ```
 
 To learn more, read the [getting started](http://gruntjs.com/getting-started) guide
@@ -33,8 +45,16 @@ To learn more, read the [getting started](http://gruntjs.com/getting-started) gu
 
 > Bower is a package manager for the web. It offers a generic, unopinionated solution to the problem of front-end package management, while exposing the package dependency model via an API that can be consumed by a more opinionated build stack. There are no system wide dependencies, no dependencies are shared between different apps, and the dependency tree is flat.
 
+**Install bower:**
+
 ```
 npm install bower -g
+```
+
+**Bower version:**
+
+```
+bower --version
 ```
 
 ## Getting started
