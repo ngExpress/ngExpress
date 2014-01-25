@@ -1,8 +1,13 @@
 {
-  "name": "momentum-bare",
+  "name": "ngExpress",
   "version": "0.0.1",
   "dependencies": {
     "express": "~3.4.8",
-    "connect-livereload": "~0.3.2"
+    "connect-livereload": "~0.3.2",
+    "consolidate": "~0.10.0",
+    "ejs": "~0.8.5"
+  },
+  "engines": {
+    "node": ">=0.10.0"
   }
 }
