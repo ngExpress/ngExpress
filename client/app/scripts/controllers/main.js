@@ -7,8 +7,13 @@ angular.module('ngApp')
             $scope.navigateToUI = function(){
                 $location.path('/ui');
             };
+            
             $scope.navigateToNVD3 = function(){
                 $location.path('/nvd3');
+            };
+
+            $scope.navigateToCommon = function(){
+                $location.path('/common');
             };
         }
     ]);

@@ -3,7 +3,8 @@
 angular.module('ngApp', [
         'ngRoute',
         'ngExpress.bundles.ui',
-        'ngExpress.bundles.nvd3'
+        'ngExpress.bundles.nvd3',
+        'ngExpress.bundles.common'
     ])
     .config([
         '$routeProvider',
@@ -20,6 +21,10 @@ angular.module('ngApp', [
                 .when('/nvd3', {
                     templateUrl: 'views/nvd3.html',
                     controller: 'NVD3Ctrl'
+                })
+                .when('/common', {
+                    templateUrl: 'views/common.html',
+                    controller: 'CommonCtrl'
                 })
                 .otherwise({
                     redirectTo: '/'
