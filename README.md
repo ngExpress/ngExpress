@@ -97,7 +97,7 @@ Next, build ngExpress (to prepare for deployment).
 grunt build
 ```
 
-This concatinate and minifies all javascrip, css, etc. in a new folder.
+This concatenate and minifies all javascript, css, etc. in a new folder.
 
 To check if the build process was successful, navigate to the server folder and install all dependencies
 
