@@ -1,28 +1,28 @@
 'use strict';
 
 angular.module('mbApp')
-    .directive('portalShow', ['$location',
+    .directive('portalShow', [
+        '$location',
         function($location) {
             return {
                 'link': function(scope, element) {
-                    if ($location.search().portal && $location.search().portal === 'true'){
+                    if ($location.search().portal && $location.search().portal === 'true') {
                         element.removeClass('hidden');
-                    }
-                    else {
+                    } else {
                         element.addClass('hidden');
                     }
                 }
             };
         }
     ])
-    .directive('portalHide', ['$location',
+    .directive('portalHide', [
+        '$location',
         function($location) {
             return {
                 'link': function(scope, element) {
-                    if ($location.search().portal && $location.search().portal === 'true'){
+                    if ($location.search().portal && $location.search().portal === 'true') {
                         element.addClass('hidden');
-                    }
-                    else {
+                    } else {
                         element.removeClass('hidden');
                     }
                 }
