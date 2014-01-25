@@ -1,7 +1,12 @@
 {
   "name": "ngExpress",
   "version": "0.0.1",
-  "dependencies": {},
+  "dependencies": {
+    "express": "~3.4.8",
+    "connect-livereload": "~0.3.2",
+    "consolidate": "~0.10.0",
+    "ejs": "~0.8.5"
+  },
   "devDependencies": {
     "grunt": "~0.4.2",
     "grunt-autoprefixer": "~0.6.4",
