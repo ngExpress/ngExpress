@@ -35,13 +35,15 @@ npm install bower -g
 git clone https://github.com/ngExpress/ngExpress.git
 ```
 
-### Bower
+### Install dependencies
+
+#### Bower
 
 ```
 bower install
 ```
 
-### NPM
+#### NPM
 
 ```
 npm install
