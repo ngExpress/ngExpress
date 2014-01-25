@@ -1,44 +1,8 @@
-<script type="text/ng-template" id="simpleModal.html">
-    <div class="modal-header">
-        <h3>modal-header</h3>
-    </div>
-    <div class="modal-body">
-        <p>modal-body</p>
-    </div>
-    <div class="modal-footer">
-        <button class="btn btn-primary" ng-click="ok()">OK</button>
-        <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
-    </div>
-</script>
+<div class="jumbotron">
+  <h1>ngExpress</h1>
+  <p>ANGULAR + NODE + EXPRESS</p>
+  <p><a class="btn btn-primary btn-lg" role="button" ng-click="navigateToDemos();">Demos</a></p>
+</div>
 
+<p class="lead">POWERED BY</p>
 <img src="images/angularjs-logo.png" alt="angularjs" />
-
-<div class="page-header">
-    <h1>UI Bootstrap</h1>
-</div>
-
-<p class="lead">Bootstrap components written in pure AngularJS by the AngularUI Team.</p>
-
-<button type="button" class="btn btn-default" ng-click="showModal();">Show modal</button>
-
-<div class="page-header">
-    <h1>UI Select2</h1>
-</div>
-
-<p class="lead">An AngularJS wrapper for select2.</p>
-
-<select ng-model="selectedOption" data-ui-select2="" class="form-control" data-placeholder="Select an option using select2">
-    <option></option>
-    <option>Option 1</option>
-    <option>Option 2</option>
-    <option>Option 3</option>
-    <option>Option 4</option>
-</select>
-
-<div class="page-header">
-    <h1>UI Utils</h1>
-</div>
-
-<p class="lead">Swiss-Army-Knife of AngularJS tools.</p>
-
-<input ui-mask="(999) 999-9999" ng-model="sampleMaskedInput" class="form-control">
