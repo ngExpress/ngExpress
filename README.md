@@ -11,7 +11,7 @@ ngExpress
 git --version
 ```
 
-### [Node](http://nodejs.org/)
+### [Node.js](http://nodejs.org/)
 
 > Node.js is a platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices.
 
@@ -60,3 +60,11 @@ npm install
 ```
 
 ## Build, run and deploy
+
+To check if all the dependencies installed successfully, run a local server using the following:
+
+```
+grunt server
+```
+
+This should build your project, start a node.js instance and open your browser at [http://localhost:9000/](http://localhost:9000/).
