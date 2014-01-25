@@ -2,7 +2,8 @@
 
 angular.module('ngApp', [
         'ngRoute',
-        'ngExpress.bundles.ui'
+        'ngExpress.bundles.ui',
+        'ngExpress.bundles.nvd3'
     ])
     .config([
         '$routeProvider',
@@ -12,9 +13,13 @@ angular.module('ngApp', [
                     templateUrl: 'views/main.html',
                     controller: 'MainCtrl'
                 })
-                .when('/demos', {
-                    templateUrl: 'views/demos.html',
-                    controller: 'DemosCtrl'
+                .when('/ui', {
+                    templateUrl: 'views/ui.html',
+                    controller: 'UICtrl'
+                })
+                .when('/nvd3', {
+                    templateUrl: 'views/nvd3.html',
+                    controller: 'NVD3Ctrl'
                 })
                 .otherwise({
                     redirectTo: '/'

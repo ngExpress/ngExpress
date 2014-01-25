@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('ngApp')
-    .controller('DemosCtrl', [
+    .controller('UICtrl', [
         '$scope', '$rootScope', '$modal',
         function($scope, $rootScope, $modal) {
             $scope.dt = new Date();
