@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('mbApp', [
+angular.module('ngApp', [
         'ngRoute',
         'ui.bundle'
     ])

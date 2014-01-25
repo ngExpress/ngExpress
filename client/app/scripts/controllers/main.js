@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('mbApp')
+angular.module('ngApp')
     .controller('MainCtrl', [
         '$scope', '$rootScope', '$modal',
         function($scope, $rootScope, $modal) {
