@@ -81,10 +81,38 @@ npm install
 
 ## Build, run and deploy
 
-To check if all the dependencies installed successfully, run a local server using the following:
+Check if all the dependencies installed successfully by running a local server.
 
 ```
 grunt server
 ```
 
 This should build your project, start a node.js instance and open your browser at [http://localhost:9000/](http://localhost:9000/).
+
+### Build
+
+Next, build ngExpress (to prepare for deployment).
+
+```
+grunt build
+```
+
+This concatinate and minifies all javascrip, css, etc. in a new folder.
+
+To check if the build process was successful, navigate to the server folder and install all dependencies
+
+```
+npm install
+```
+
+Now, run the server in __production__ mode
+
+```
+node app.js
+```
+
+or if you need cluster support
+
+```
+node cluster.js
+```
