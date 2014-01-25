@@ -3,25 +3,25 @@ ngExpress
 
 ## Prerequisites
 
-1. [Git](http://git-scm.com/)
+### [Git](http://git-scm.com/)
 
 ```
 git --version
 ```
 
-2. [Node](http://nodejs.org/)
+### [Node](http://nodejs.org/)
 
 ```
 node --version
 ```
 
-3. [Grunt](http://gruntjs.com/)
+### [Grunt](http://gruntjs.com/)
 
 ```
 npm install grunt-cli -g
 ```
 
-4. [Bower](http://bower.io/)
+### [Bower](http://bower.io/)
 
 ```
 npm install bower -g
