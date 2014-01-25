@@ -2,7 +2,6 @@
 
 angular.module('mbApp', [
         'ngRoute',
-        'ngAnimate',
         'ui.bundle'
     ])
     .config([
