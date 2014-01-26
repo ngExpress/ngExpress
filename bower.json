@@ -6,8 +6,10 @@
     "angular": "1.2.9",
     "angular-route": "1.2.9",
     "bootstrap": "~3.0.3",
+    "d3": "3.0.8",
+    "r2d3": "0.2.0",
     "ngExpress-bundles-ui": "https://github.com/ngExpress/ngExpress-bundles-ui.git",
-    "ngExpress-bundles-nvd3": "https://github.com/ngExpress/ngExpress-bundles-nvd3.git",
+    "ngExpress-bundles-d3": "https://github.com/ngExpress/ngExpress-bundles-d3.git",
     "ngExpress-bundles-common": "https://github.com/ngExpress/ngExpress-bundles-common.git"
   }
 }

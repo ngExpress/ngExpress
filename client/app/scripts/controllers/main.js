@@ -8,8 +8,9 @@ angular.module('ngApp')
                 $location.path('/ui');
             };
             
-            $scope.navigateToNVD3 = function(){
-                $location.path('/nvd3');
+            $scope.navigateToD3 = function(){
+                console.log('navigateToD3');
+                $location.path('/d3');
             };
 
             $scope.navigateToCommon = function(){

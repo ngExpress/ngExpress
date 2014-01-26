@@ -3,7 +3,7 @@
 angular.module('ngApp', [
         'ngRoute',
         'ngExpress.bundles.ui',
-        'ngExpress.bundles.nvd3',
+        'ngExpress.bundles.d3',
         'ngExpress.bundles.common'
     ])
     .config([
@@ -18,9 +18,9 @@ angular.module('ngApp', [
                     templateUrl: 'views/ui.html',
                     controller: 'UICtrl'
                 })
-                .when('/nvd3', {
-                    templateUrl: 'views/nvd3.html',
-                    controller: 'NVD3Ctrl'
+                .when('/d3', {
+                    templateUrl: 'views/d3.html',
+                    controller: 'D3Ctrl'
                 })
                 .when('/common', {
                     templateUrl: 'views/common.html',

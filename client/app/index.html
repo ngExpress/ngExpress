@@ -12,7 +12,7 @@
         <!-- bower:css -->
         <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
         <link rel="stylesheet" href="bower_components/ngExpress-bundles-ui/dist/bundle.css" />
-        <link rel="stylesheet" href="bower_components/ngExpress-bundles-nvd3/dist/bundle.css" />
+        <link rel="stylesheet" href="bower_components/ngExpress-bundles-d3/dist/bundle.css" />
         <link rel="stylesheet" href="bower_components/ngExpress-bundles-common/dist/bundle.css" />
         <!-- endbower -->
         <!-- endbuild -->
@@ -42,6 +42,11 @@
             <span class="text-muted pull-right"><%= serverId %></span>
         </div>
 
+        <!--[if lte IE 8]><script src="bower_components/r2d3/r2d3.js"></script><![endif]-->
+        <!--[if gte IE 9]><!-->
+        <script src="bower_components/d3/d3.js"></script>
+        <!--<![endif]-->
+
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
         <script src="bower_components/jquery/jquery.js"></script>
@@ -49,7 +54,7 @@
         <script src="bower_components/angular-route/angular-route.js"></script>
         <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
         <script src="bower_components/ngExpress-bundles-ui/dist/bundle.js"></script>
-        <script src="bower_components/ngExpress-bundles-nvd3/dist/bundle.js"></script>
+        <script src="bower_components/ngExpress-bundles-d3/dist/bundle.js"></script>
         <script src="bower_components/ngExpress-bundles-common/dist/bundle.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
@@ -58,7 +63,7 @@
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/ui.js"></script>
-        <script src="scripts/controllers/nvd3.js"></script>
+        <script src="scripts/controllers/d3.js"></script>
         <script src="scripts/controllers/common.js"></script>
         <!-- endbuild -->
     </body>
